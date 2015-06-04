@@ -1,0 +1,79 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\begin{document}
+\title{ {Análisis de tiempos de lanzamiento de proyectos comunitarios
+    de software libre mediante análisis de redes sociales: Caso
+    practico Debian GNU/Linux}\\ {Protocolo} } \author{Wences Arana}
+\maketitle
+
+\tableofcontents
+\chapter*{Propósito del proyecto}
+
+Todo software desde  su comienzo como una idea general  hasta llegar a
+ser un sistema  integro y funcional, conlleva un  proceso ordenado con
+limites  definidos   en  cuestiones   de  tiempo  y   cumplimiento  de
+metas.  Dicho  cumplimiento de  metas  debe  ser  dentro de  un  marco
+tolerable de tiempo, esto con el  fin de tener un proceso eficiente de
+desarrollo  de software,  un  mejor manejo  de  costos de  producción,
+calidad del mismo  entre otras cualidades. Por esto  mismo la medición
+de los factores que influyen en el atraso del cumplimiento de metas se
+hace  de  vital  importancia  para  el estudio  de  la  ingeniería  de
+software,  para  lograr  crear  un  proceso  eficiente  de  desarrollo
+replicable y  dentro de  los recursos disponibles.  Por esto  mismo se
+plantea realizar  dicho análisis  utilizando el área  de la  teoría de
+análisis de redes  sociales con el fin  de por medio de  un estudio de
+los  datos disponibles  crear  un modelo  replicable  en proyectos  de
+software con  características similares,  en nuestro  caso se  hará el
+estudio en base  a sistemas operativos libres  desarrollados de manera
+colaborativa por  voluntarios y otros actores  interesados, tomando en
+cuenta  factores  relacionados  con   la  unidad  mínima  de  software
+denominada  paquete  que conforma  una  red  de  estos  que a  su  vez
+conforman el  sistema operativo en  su totalidad, además de  las redes
+que  existen en  las relaciones  sociales de  los participantes  en el
+desarrollo  de  dicho  software.  El   estudio  servirá  a  todos  los
+interesados en obtener un modelo  para poder encontrar posibles fallas
+en la gestión del proyecto  relacionadas con los distintos componentes
+que forman parte de su proyecto de software tanto social como técnico,
+tangible e intangible.
+
+\chapter*{Introducción}
+La  teoría  de  análisis  de   redes  tiene  como  objetivo  encontrar
+relaciones en eventos de la naturaleza que no parecen tener incidencia
+unos con  otros a primera vista,  sin embargo al realizar  un análisis
+profundo de sus relaciones, en algunos casos, pueden encontrarse desde
+relaciones de causa efecto entre  eventos, actores, recursos, hasta la
+importancia  de algunos  de  estos  en el  funcionamiento  de todo  el
+sistema   en   su   conjunto,   subgrupos   relacionados,   relaciones
+inesperadas, entre otras. Utilizando dicha teoría se pretende analizar
+el  proyecto  colaborativo  de  software libre  Debian  y  su  sistema
+operativo Debian GNU/Linux  con el objetivo de  encontrar los factores
+que  inciden en  el tiempo  de  lanzamiento de  versiones estables  de
+este.  Para dicho  objetivo se  manejaran varios  enfoques para  poder
+medir dicho  impacto y estos  son: utilizar como principales  nodos la
+unidad mínima funcional de software en el proyecto denominado paquete,
+la figura  de desarrollador de software  siendo en este caso  tanto un
+desarrollador Debian  como un desarrollador original  del software que
+da  origen al  paquete,  como  relaciones entre  nodos  se tomaran  en
+cuenta, dependencias  de construcción entre paquetes,  dependencias en
+tiempo de ejecución  de los paquetes, bugs detectados  en los paquetes
+que  interfieran  en  la  relación   entre  ellos,  cantidad  de  bugs
+reportados  de parte  de un  desarrollador Debian  a un  desarrollador
+upstrem, cantidad de parches aplicados  por parte de upstream enviados
+por   un    desarrollador   debian,   cantidad   de    correos   entre
+desarolladores. Con  esta informacion  modelada se podra  analizar por
+medio  de  algoritmos  existentes  de  teoría  de  análisis  de  redes
+sociales, en caso  de poder ser aplicables, de lo  contrario se creara
+el adecuado  para poder realizar  de manera  apropiada los datos  y de
+esta  forma poder  encontrar, patrones  de centralidad,  incidencia de
+clanes,  nodos  de  mayor  importancia  etcetera,  y  con  esto  podrá
+interpretarse los valores y hacer un análisis del impacto en el tiempo
+de desarrollo de una nueva versión  estable del proyecto de software a
+otra.
+\end{document}
+
+
+
+
+
+
