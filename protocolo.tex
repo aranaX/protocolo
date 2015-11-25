@@ -1,25 +1,60 @@
-\documentclass[12pt]{report}               \usepackage[utf8]{inputenc}
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\begin{document}  \title{  {Análisis  de  tiempos  de  lanzamiento  de
-proyectos comunitarios  de software  libre mediante análisis  de redes
-sociales:   Caso   practico    Debian   GNU/Linux}\\   {Protocolo}   }
+\usepackage{hyperref}
+
+%parafernalia para las revisiones
+\usepackage{verbatim}
+\usepackage{xargs}
+\usepackage{changebar}
+\usepackage[colorinlistoftodos, textwidth=65mm, shadow]{todonotes}
+\usepackage[paperwidth=275.9mm, paperheight=279.4mm]{geometry}
+\setlength{\oddsidemargin}{35mm}
+\setlength{\evensidemargin}{35mm}
+\setlength{\voffset}{-1in}
+\setlength{\hoffset}{-1in}
+\setlength{\textwidth}{156mm}
+\setlength{\topmargin}{4mm}
+\setlength{\headheight}{10mm}
+\setlength{\headsep}{12mm}
+\setlength{\topskip}{0mm}
+\setlength{\textheight}{228mm}
+%fin de parafernalia
+
+\begin{document}  
+\title{  
+	{Análisis  de  tiempos  de  lanzamiento  de
+	proyectos comunitarios  de software  libre mediante 
+	análisis  de redes sociales:   Caso   practico    
+	Debian   GNU/Linux}
+	\\   {Protocolo}   
+}
 \author{Wences Arana}
 \maketitle
 
 \tableofcontents
 \chapter*{Propósito del proyecto}
 
-Todo software desde  su comienzo como una idea general  hasta llegar a
+Todo software desde  su comienzo \todo{Inicia?}
+como una idea general  hasta llegar a
 ser un sistema  integro y funcional, conlleva un  proceso ordenado con
 limites definidos  en cuestiones  de tiempo  y cumplimiento  de metas.
+\todo{Esta es una afirmación muy fuerte para este estudio
+considerando que Debian stable en realidad es un 
+proceso organico sin limites, excepto el \textit{cuando esté listo},
+y es una caracteristica inherente a Debian GNU/Linux}
 Dicho cumplimiento de  metas debe ser dentro de un  marco tolerable de
 tiempo, esto con el fin de tener un proceso eficiente de desarrollo de
 software, un mejor  manejo de costos de producción,  calidad del mismo
-entre otras cualidades. Por esto mismo la medición de los factores que
+entre otras cualidades.
+\\
+Por esto mismo la medición de los factores que
 influyen  en el  atraso del  cumplimiento de  metas se  hace de  vital
 importancia para el estudio de  la ingeniería de software, para lograr
 crear un  proceso eficiente de  desarrollo replicable y dentro  de los
-recursos  disponibles.   Por  esto  mismo se  plantea  realizar  dicho
+recursos  disponibles.   Por  esto  mismo \todo{"Por esto mismo" 
+se repite demasiadas veces} 
+se  plantea  realizar  dicho
 análisis utilizando el área de la teoría de análisis de redes sociales
 con el fin de  por medio de un estudio de  los datos disponibles crear
 un  modelo replicable  en  proyectos de  software con  características
@@ -34,8 +69,28 @@ servirá  a todos  los  interesados  en obtener  un  modelo para  poder
 encontrar posibles fallas en la  gestión del proyecto relacionadas con
 los distintos componentes que forman  parte de su proyecto de software
 tanto social como técnico, tangible e intangible.
+\todo{La idea general del parrafo se entiende pero abusas de los
+conectores, especialmente de "por esto", ver \url{http://mimosa.pntic.mec.es/ajuan3/lengua/l_conect.htm}}
+\todo{El "proposito" del estudio es demostrar la necesidad de tu 
+estudio, podes omitir la parte de SNA aca, de otra forma vas a tener
+que explicarlo y quedaria redundante con la introducción}
+\todo{Al lector puede no quedarle claro ¿porque es importante Debian?
+, ¿Porque es importante para el mundo lanzamientos más predecibles?}
 
-\chapter*{Introducción}  La teoría  de  análisis de  redes tiene  como
+\begin{comment}
+Tenes que poner en tu proposito cual es TU problema,
+y porque es un problema importante para otros (individuos, comunidad)
+, actualmente lo planteas como "el software que se atrasa es malo y
+de panzaso creo que encontrare la solución mediante Debian Linux.
+\end{comment}
+
+\chapter*{Introducción}  
+\todo{Debes iniciar por explicar el problema, no la técnica con la 
+que pretendes resolverlo, la tecnica solo la debes justificar una vez
+que ya se explicó el problema a detalle
+-e.g. se pretende usar SNA por las caracteristicas organicas x,y,z,w
+del proyecto-}
+La teoría  de  análisis de  redes tiene  como
 objetivo  encontrar relaciones  en  eventos de  la  naturaleza que  no
 parecen tener incidencia  unos con otros a primera  vista, sin embargo
 al realizar un análisis profundo  de sus relaciones, en algunos casos,
@@ -67,8 +122,30 @@ centralidad,  incidencia  de  clanes,   nodos  de  mayor  importancia,
 etcétera,  y con  esto  podrá  interpretarse los  valores  y hacer  un
 análisis del impacto  en el tiempo de desarrollo de  una nueva versión
 estable del proyecto de software a otra.
+\todo{La intro explica bien de que se tratara el estudio, solo
+que tenes que presentarla en un orden lógico}
+\todo{Al haber decidido también tenes que explicar cual va a ser la 
+metodología de investigación con la cual vas a abordar el problema
+y la teoría computacional que la soporta}
+\begin{comment}
+Yo plantearia que es Debian, como funciona una distro a grandes rasgos
+cuales son sus características que lo hacen un proyecto comunitario
+orgánico, como se dan las conexiones, -i.e. todo lo que pusiste 
+despues de hablar de SNA- y ya con esa información informar al lector 
+que por tal motivo se usara SNA.
 
-\chapter*{Antecedentes}  En  el  campo  de estudio  de  la  teoría  de
+De nuevo también te recomiendo revisar y alternar conectores en todo
+el texto.
+\end{comment}
+
+
+\chapter*{Antecedentes}  
+\todo{Mismo comentario que la sección anterior, primero explica el
+problema y luego como fue cubierto/estudiado}
+\todo{También debes agregar una pequeña explicación de cada estudio
+y/o su objetivo para que realmente sea una sección antecedentes, el 
+lector no debe ir a cada link para entenderlo}
+En  el  campo  de estudio  de  la  teoría  de
 análisis  de redes,  se han  realizado investigaciones  relacionadas a
 proyectos  de software  pudiendo  mencionar  análisis de  comunicación
 entre  desarrolladores en  un proyecto  de software\footnote{Crowston,
@@ -92,11 +169,16 @@ un  modelo en  base a  los datos,  buscando encontrar  los principales
 cuellos de botella y áreas a  mejorar para poder eficientar el proceso
 de desarrollo de software de la distribución Debian GNU/Linux.
 
-\chapter*{Justificación} La investigación tiene un fundamento esencial
+\chapter*{Justificación} 
+\todo{Este es lenguaje de abogado, simplificalo y unilo a todo el
+siguiente parrafo}
+La investigación tiene un fundamento esencial
 de existir debido a la necesidad  de poder encontrar los problemas que
 se  llevan a  acabo en  proyectos  colaborativos de  software de  gran
 envergadura.
 
+\todo{Esta sección te puede ayudar a construir bien tu propósito
+Propósito = Problema + Justificación simple + aporte a ciencia/área}
 El motivo de la elección de  un proyecto comunitario de software libre
 como Debian GNU/Linux se debe a factores sociales y técnicos, sociales
 debido  a  que  la  estructura   organizacional  de  la  comunidad  de
@@ -108,6 +190,16 @@ información referente a los enlaces y relaciones que existen entre las
 unidades de software que forman al sistema operativo en general, desde
 relaciones de dependencias directas  hasta relaciones indirectas en el
 funcionamiento integral del sistema operativo como tal.
+\todo{Aca se confunden dos cosas, tu estudio\newline
+¿Pretende describir el problema especifico de Debian?
+\newline o
+\newline ¿Pretende describir el problema especifico de Debian, para 
+aportar un estudio base que pueda servir al área de ingeniería de 
+software?
+\newline Ambas propuestas son validas pero no queda claro y tampoco
+se menciona en el propósito, se menciona algo en los siguientes
+parrafos pero están desconectados por el parrafo entre ambos.
+}
 
 Debido a lo anteriormente expuesto  tomando en cuenta otras teorías de
 análisis  de   datos  existentes,   la  mas  adecuada   para  analizar
@@ -119,14 +211,24 @@ pueden encontrarse  tendencias y poder aplicarse  un modelo replicable
 en  otras   investigaciones,  el  proyecto  ya   provee  un  entramado
 interrelacionado lo cual facilita la  utilización de análisis de redes
 sociales en la organización.
+\todo{De nuevo aca no hables de SNA, SNA es importante para resolver
+el problema pero aca estas cubriendo porque tu problema es importante
+y a quien/quienes puede ayudar trabajar sobre el}
+\todo{Si hablas de SNA tenes que listar al menos cuales otras técnicas
+exploraste como opción.}
 
 El proyecto es beneficioso por  que brindará un modelo replicable para
 todo gestor  de software que  cuente con  un proyecto de  software con
 múltiples componentes  interrelacionados y un equipo  de colaboradores
 heterogéneos tanto internos(desarrolladores) como externos(terceros).
+\todo{De nuevo, aca no hables de SNA, SNA es importante para resolver
+el problema pero aca estas cubriendo porque tu problema es importante
+y a quien/quienes puede ayudar trabajar sobre el}
 
 Las implicaciones que tendrá el trabajo irá orientado a la creación de
 un modelo replicable para determinar tiempos de lanzamientos.
+\todo{¿Porque replicable?, sin evidencia es dificil de afirmar que
+en efecto lo sera}
 
 El trabajo va dirigido a toda  persona que necesite modelos para poder
 determinar que puntos modificar en su organización de manera técnica y
@@ -134,7 +236,9 @@ social  de  tal forma  que  pueda  mejorar  tiempos de  lanzamiento  y
 obteniendo calidad en un tiempo razonable con una mayor anticipación.
 
 \chapter*{MARCO TEÓRICO}
-
+\todo{De nuevo, presenta primero el problema sus características,
+luego las características deben justificar solas la elección de SNA,
+presentando brevemente otras opciones}
 1.Análisis de redes  sociales \\ 
 1.2 Centralidad,  cuellos de botella,\\ 
 1.3  Clicas, clusters y  componentes, \\ 
@@ -142,7 +246,9 @@ obteniendo calidad en un tiempo razonable con una mayor anticipación.
 2.1 Estructura  social  \\  
 2.2  Estructura   técnica  \\  
 2.3  Medios  de comunicación \\
-
+\todo{El marco teorico tambien debe cubrir la teoría computacional de
+lo que vas a utilizar para tu estudio, incluyendo: métodos de 
+recolección de datos, metodos de análisis, alternativas estudiadas}
 %En  el caso  del  protocolo, el  marco teórico  funge  como un  marco
 %conceptual,   indicando    ciertas   definiciones    conceptuales   y
 %explicaciones   breves   con   que   se   basará   el   proyecto   de
