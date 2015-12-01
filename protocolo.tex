@@ -1,39 +1,70 @@
-\documentclass[12pt]{report}               \usepackage[utf8]{inputenc}
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\begin{document}  \title{  {Análisis  de  tiempos  de  lanzamiento  de
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{xargs}
+\usepackage{changebar}
+\usepackage[colorinlistoftodos, textwidth=65mm, shadow]{todonotes}
+\usepackage[paperwidth=275.9mm, paperheight=279.4mm]{geometry}
+\setlength{\oddsidemargin}{35mm}
+\setlength{\evensidemargin}{35mm}
+\setlength{\voffset}{-1in}
+\setlength{\hoffset}{-1in}
+\setlength{\textwidth}{156mm}
+\setlength{\topmargin}{4mm}
+\setlength{\headheight}{10mm}
+\setlength{\headsep}{12mm}
+\setlength{\topskip}{0mm}
+\setlength{\textheight}{228mm}
+
+\begin{document}  \title{ {Análisis  de  tiempos  de  lanzamiento  de
 proyectos comunitarios  de software  libre mediante análisis  de redes
-sociales:   Caso   practico    Debian   GNU/Linux}\\   {Protocolo}   }
+sociales:   Caso   practico    Debian   GNU/Linux}
+\\   {Protocolo}   }
 \author{Wences Arana}
 \maketitle
 
 \tableofcontents
 \chapter*{Propósito del proyecto}
 
-Todo software desde  su comienzo como una idea general  hasta llegar a
-ser un sistema  integro y funcional, conlleva un  proceso ordenado con
-limites definidos  en cuestiones  de tiempo  y cumplimiento  de metas.
+Todo proyecto de software inicia como  una idea general hasta llegar a
+ser un sistema  íntegro y funcional, conlleva un  proceso ordenado con
+límites definidos  en cuestiones  de tiempo  y cumplimiento  de metas.
 Dicho cumplimiento de  metas debe ser dentro de un  marco tolerable de
 tiempo, esto con el fin de tener un proceso eficiente de desarrollo de
 software, un mejor  manejo de costos de producción,  calidad del mismo
-entre otras cualidades. Por esto mismo la medición de los factores que
-influyen  en el  atraso del  cumplimiento de  metas se  hace de  vital
-importancia para el estudio de  la ingeniería de software, para lograr
-crear un  proceso eficiente de  desarrollo replicable y dentro  de los
-recursos  disponibles.   Por  esto  mismo se  plantea  realizar  dicho
-análisis utilizando el área de la teoría de análisis de redes sociales
-con el fin de  por medio de un estudio de  los datos disponibles crear
-un  modelo replicable  en  proyectos de  software con  características
+entre otras cualidades. Aunque varios proyectos de software libre como
+en el caso del Proyecto Debian  no cuentan con dicha rigídez de tiempo
+si se  desea que el  software obtenido  para lanzar de  manera estable
+deba contar con un estándar de calidad alto.
+
+Por esto mismo  la medición de los factores que  influyen en el atraso
+del cumplimiento de metas se hace de vital importancia para el area de
+la ingeniería  de software. Esto con  la finalidad de lograr  crear un
+proceso eficiente  de desarrollo replicable  y dentro de  los recursos
+disponibles.Por  lo  tanto  debemos  plantear  la  realización  de  un
+análisis por medio  de un estudio de los datos  disponibles y crear un
+modelo  replicable  en  proyectos   de  software  con  características
 similares,  en nuestro  caso se  hará el  estudio en  base a  sistemas
 operativos libres desarrollados de manera colaborativa por voluntarios
 y otros  actores interesados, tomando en  cuenta factores relacionados
 con la unidad  mínima de software denominada paquete  que conforma una
 red  de estos  que  a su  vez  conforman el  sistema  operativo en  su
 totalidad, además de las redes  que existen en las relaciones sociales
-de los participantes  en el desarrollo de dicho  software.  El estudio
-servirá  a todos  los  interesados  en obtener  un  modelo para  poder
-encontrar posibles fallas en la  gestión del proyecto relacionadas con
-los distintos componentes que forman  parte de su proyecto de software
-tanto social como técnico, tangible e intangible.
+de los participantes  en el desarrollo de dicho  software. El Proyecto
+Debian  que  se  utilizará  como  base de  este  estudio  provee  esta
+infraestructura,  además de  tener  actualmente  algunos problemas  de
+retraso en  entregas de lanzamientos  de su rama estable,  dándonos el
+escenario ideal para realizar el estudio.
+
+Poder predecir los tiempos de  entrega, ayudará a proyectos grandes de
+software  en la  economización de  recursos, debido  a la  detección a
+tiempo de cuellos de botella  en desarrollo, colaboradores críticos en
+el  proyecto, mala  comunicación  entre los  distintos equipos,  entre
+otras. Aydando  asi en  la gestión del  proyecto relacionadas  con los
+distintos  componentes que  forman parte  de su  proyecto de  software
+tanto lo social como lo técnico, lo tangible e intangible.
 
 \chapter*{Introducción}  La teoría  de  análisis de  redes tiene  como
 objetivo  encontrar relaciones  en  eventos de  la  naturaleza que  no
