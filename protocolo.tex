@@ -35,12 +35,12 @@ Dicho cumplimiento de  metas debe ser dentro de un  marco tolerable de
 tiempo, esto con el fin de tener un proceso eficiente de desarrollo de
 software, un mejor  manejo de costos de producción,  calidad del mismo
 entre otras cualidades. Aunque varios proyectos de software libre como
-en el caso del Proyecto Debian  no cuentan con dicha rigídez de tiempo
+en el caso del Proyecto Debian  no cuentan con dicha rigidez de tiempo
 si se  desea que el  software obtenido  para lanzar de  manera estable
 deba contar con un estándar de calidad alto.
 
 Por esto mismo  la medición de los factores que  influyen en el atraso
-del cumplimiento de metas se hace de vital importancia para el area de
+del cumplimiento de metas se hace de vital importancia para el área de
 la ingeniería  de software. Esto con  la finalidad de lograr  crear un
 proceso eficiente  de desarrollo replicable  y dentro de  los recursos
 disponibles.Por  lo  tanto  debemos  plantear  la  realización  de  un
@@ -62,42 +62,63 @@ Poder predecir los tiempos de  entrega, ayudará a proyectos grandes de
 software  en la  economización de  recursos, debido  a la  detección a
 tiempo de cuellos de botella  en desarrollo, colaboradores críticos en
 el  proyecto, mala  comunicación  entre los  distintos equipos,  entre
-otras. Aydando  asi en  la gestión del  proyecto relacionadas  con los
+otras. Ayudando  así en  la gestión del  proyecto relacionadas  con los
 distintos  componentes que  forman parte  de su  proyecto de  software
 tanto lo social como lo técnico, lo tangible e intangible.
 
-\chapter*{Introducción}  La teoría  de  análisis de  redes tiene  como
-objetivo  encontrar relaciones  en  eventos de  la  naturaleza que  no
-parecen tener incidencia  unos con otros a primera  vista, sin embargo
-al realizar un análisis profundo  de sus relaciones, en algunos casos,
-pueden  encontrarse desde  relaciones de  causa efecto  entre eventos,
-actores,  recursos, hasta  la importancia  de algunos  de estos  en el
-funcionamiento  de   todo  el   sistema  en  su   conjunto,  subgrupos
-relacionados,  relaciones inesperadas,  entre otras.  Utilizando dicha
-teoría se pretende analizar el proyecto colaborativo de software libre
-Debian  y su  sistema operativo  Debian GNU/Linux  con el  objetivo de
-encontrar  los factores  que inciden  en el  tiempo de  lanzamiento de
-versiones estables  de este.  Para  lograr este objetivo  se manejaran
-varios enfoques  para medir dicho  impacto y podemos  definirlos como:
-utilizar como principales nodos la unidad mínima funcional de software
-en  el proyecto  denominada  paquete, la  figura  de desarrollador  de
-software siendo  en este  caso tanto un  desarrollador Debian  como un
-desarrollador original  del software  que da  origen al  paquete, como
-relaciones  entre   nodos  se  tomaran  en   cuenta,  dependencias  de
-construcción entre  paquetes, dependencias  en tiempo de  ejecución de
-los paquetes,  bugs detectados en  los paquetes que interfieran  en la
-relación  entre ellos,  cantidad de  bugs  reportados de  parte de  un
-desarrollador Debian  a un desarrollador upstrem,  cantidad de parches
-aplicados por parte de upstream  enviados por un desarrollador Debian,
-cantidad  de  correos  entre  desarrolladores.  Con  esta  información
-modelada  se podrá  analizar  por medio  de  algoritmos existentes  de
-teoría de análisis de redes sociales, en caso de poder ser aplicables,
-de lo  contrario se creara el  adecuado para poder realizar  de manera
-apropiada  los datos  y de  esta  forma poder  encontrar, patrones  de
-centralidad,  incidencia  de  clanes,   nodos  de  mayor  importancia,
-etcétera,  y con  esto  podrá  interpretarse los  valores  y hacer  un
-análisis del impacto  en el tiempo de desarrollo de  una nueva versión
-estable del proyecto de software a otra.
+\chapter*{Introducción} En  el área de administración  de software una
+de las principales  áreas de estudio es la entrega  de lanzamientos en
+tiempo  y  utilizando los  recursos  disponibles,  si el  proyecto  de
+software   no  es   entregado  en   el  tiempo   estipulado  impactará
+directamente en el presupuesto del proyecto, la confianza en el equipo
+de  desarrollo,   y  afectará   la  confianza   en  el   entregable  a
+utilizar. Poder  predecir a  tiempo los puntos  que puedan  atrasar el
+proyecto ayudaría a entregar el software sin impactar negativamente en
+los puntos mencionados  anteriormente. En el caso  del proyecto Debian
+GNU/Linux  dicha problemática  se ha  visto evidenciada  a través  del
+tiempo,  a  pesar de  no  tener  un  esquema de  tiempo  estrictamente
+definido,  se intenta  lanzar una  nueva versión  estable del  sistema
+operativo en  el momento en  que ciertas  metas se cumplan,  muchas de
+estas no se llegan a lograr en un tiempo lo suficientemente rápido, de
+tal forma que  se distribuya software más antiguo del  que se presenta
+en otras distribuciones GNU/Linux.
+
+Para  poder  llegar  a  determinar   las  causas  que  afectan  en  el
+lanzamiento  de tiempo  se decide  utilizar la  teoría de  análisis de
+redes, esto debido  a que tiene como objetivo  encontrar relaciones en
+eventos  de la  naturaleza que  no parecen  tener incidencia  unos con
+otros a primera vista, sin embargo al realizar un análisis profundo de
+sus relaciones, en algunos  casos, pueden encontrarse desde relaciones
+de causa efecto entre eventos, actores, recursos, hasta la importancia
+de algunos  de estos  en el  funcionamiento de todo  el sistema  en su
+conjunto, subgrupos relacionados, relaciones inesperadas, entre otras.
+Utilizando dicha teoría se  pretende analizar el proyecto colaborativo
+de software libre  Debian y su sistema operativo  Debian GNU/Linux con
+el objetivo  de encontrar  los factores  que inciden  en el  tiempo de
+lanzamiento de versiones estables de  este.  Para lograr este objetivo
+se  manejaran  varios enfoques  para  medir  dicho impacto  y  podemos
+definirlos  como: utilizar  como  principales nodos  la unidad  mínima
+funcional de software en el  proyecto denominada paquete, la figura de
+desarrollador de software  siendo en este caso  tanto un desarrollador
+Debian como  un desarrollador original  del software que da  origen al
+paquete,   como  relaciones   entre  nodos   se  tomaran   en  cuenta,
+dependencias de construcción entre paquetes, dependencias en tiempo de
+ejecución  de  los  paquetes,  bugs detectados  en  los  paquetes  que
+interfieran en la relación entre ellos, cantidad de bugs reportados de
+parte de un desarrollador Debian  a un desarrollador upstream, cantidad
+de  parches   aplicados  por  parte   de  upstream  enviados   por  un
+desarrollador Debian, cantidad de  correos entre desarrolladores.  Con
+esta información  modelada se podrá  analizar por medio  de algoritmos
+existentes de teoría  de análisis de redes sociales, en  caso de poder
+ser  aplicables, de  lo contrario  se  creara el  adecuado para  poder
+realizar  de  manera  apropiada  los  datos  y  de  esta  forma  poder
+encontrar,  patrones de  centralidad, incidencia  de clanes,  nodos de
+mayor  importancia,  etcétera,  y  con esto  podrá  interpretarse  los
+valores y hacer un análisis del  impacto en el tiempo de desarrollo de
+una  nueva  versión estable  del  proyecto  de  software a  otra.   Se
+utilizará  como metodología  de  investigación las  utilizadas por  el
+muestreo  teórico o  ``Grounded Theory''  debido a  que se  analizaran
+factores sociales, limitados a un pequeño entorno.
 
 \chapter*{Antecedentes}  En  el  campo  de estudio  de  la  teoría  de
 análisis  de redes,  se han  realizado investigaciones  relacionadas a
