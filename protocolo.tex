@@ -5,18 +5,18 @@
 \usepackage{verbatim}
 \usepackage{xargs}
 \usepackage{changebar}
-\usepackage[colorinlistoftodos, textwidth=65mm, shadow]{todonotes}
-\usepackage[paperwidth=275.9mm, paperheight=279.4mm]{geometry}
-\setlength{\oddsidemargin}{35mm}
-\setlength{\evensidemargin}{35mm}
-\setlength{\voffset}{-1in}
-\setlength{\hoffset}{-1in}
-\setlength{\textwidth}{156mm}
-\setlength{\topmargin}{4mm}
-\setlength{\headheight}{10mm}
-\setlength{\headsep}{12mm}
-\setlength{\topskip}{0mm}
-\setlength{\textheight}{228mm}
+%\usepackage[colorinlistoftodos, textwidth=65mm, shadow]{todonotes}
+%\usepackage[paperwidth=275.9mm, paperheight=279.4mm]{geometry}
+%\setlength{\oddsidemargin}{35mm}
+%\setlength{\evensidemargin}{35mm}
+%\setlength{\voffset}{-1in}
+%\setlength{\hoffset}{-1in}
+%\setlength{\textwidth}{156mm}
+%\setlength{\topmargin}{4mm}
+%\setlength{\headheight}{10mm}
+%\setlength{\headsep}{12mm}
+%\setlength{\topskip}{0mm}
+%\setlength{\textheight}{228mm}
 
 \begin{document}  \title{ {Análisis  de  tiempos  de  lanzamiento  de
 proyectos comunitarios  de software  libre mediante análisis  de redes
@@ -26,37 +26,50 @@ sociales:   Caso   practico    Debian   GNU/Linux}
 \maketitle
 
 \tableofcontents
-\chapter*{Propósito del proyecto}
 
-Todo proyecto de software inicia como  una idea general hasta llegar a
-ser un sistema íntegro y  funcional, para lograrlo conlleva un proceso
-ordenado con límites definidos en  cuestiones de tiempo y cumplimiento
-de metas.   Dicho cumplimiento de  metas debe  ser dentro de  un marco
-tolerable de tiempo, esto con el  fin de tener un proceso eficiente de
-desarrollo  de software,  un  mejor manejo  de  costos de  producción,
-calidad del  mismo entre  otros. Aunque  varios proyectos  de software
-libre como en el caso del Proyecto Debian no cuentan con dicha rigidez
-de tiempo si  se desea que el software obtenido  para lanzar de manera
-estable deba contar con un estándar de calidad alto.
+\chapter*{Resumen}
+%Se puede crear a partir de la introducción, en el protocolo no es 
+%necesario que incluya una introducción detallada
 
-Por esto mismo  la medición de los factores que  influyen en el atraso
-del cumplimiento de metas se hace de vital importancia para el área de
-la  ingeniería de  software teniendo  como finalidad  lograr crear  un
-proceso eficiente  de desarrollo replicable  y dentro de  los recursos
-disponibles  o   proyectados.  Debemos   por  lo  tanto   plantear  la
-realización  de un  análisis  por medio  de un  estudio  de los  datos
-disponibles y crear un modelo  replicable en proyectos de software con
-características similares, en nuestro caso  se hará el estudio en base
-a sistemas operativos libres  desarrollados de manera colaborativa por
-voluntarios y  otros actores  interesados, tomando en  cuenta factores
-relacionados con la  unidad mínima de software  denominada paquete que
-conforma una red de estos que  a su vez conforman el sistema operativo
-en su  totalidad, además de  las redes  que existen en  las relaciones
-sociales de los  participantes en el desarrollo de  dicho software. Se
-utilizará como base de este estudio  a el Proyecto Debian debido a que
-provee  esta  infraestructura,  además de  tener  actualmente  algunos
-problemas de retraso  en entregas de lanzamientos de  su rama estable,
-dándonos el escenario ideal para realizar el estudio.
+\chapter*{Propósito y objetivos}
+
+%TODO Porque se hace
+\section*{Propósito}
+%Situación actual
+Los proyectos de software se definen como procesos de  transformación 
+de ideas hacia herramientas tecnológicas que resuelven necesidades de 
+los usuarios. Y para llevar a cabo estos proyectos, las metodologías 
+de gestión de proyectos sugieren la implementación de  procesos  
+ordenados con límites y objetivos definidos, con el fin de obtener 
+ciclos de desarrollo y lanzamientos de Software eficientes y 
+predecibles.   No obstante, en la practica proyectos de Software 
+Libre han demostrado que la implementación 
+de estos procesos no  es una tarea trivial, dada su naturaleza  
+orgánica y colaborativa.
+
+%Problematica
+Considerando que la medición de los factores que  influyen en el 
+atraso  del cumplimiento de metas es de vital importancia para el 
+área de  Ingeniería de Software, y dada la inexistencia de un marco 
+de referencia acerca de estos factores en el área de de Software 
+Libre, se hace evidente la necesidad de determinar la existencia (si 
+la hubiera) de factores que afectan los ciclos de lanzamiento.
+
+%Como encaja este estudio
+%TODO ver versión anterior para ver como se "despersonaliza"
+Visando la resolución de este problema, se propone el 
+estudio de un proyecto de software existente, específicamente
+sistemas operativos  libres  desarrollados de manera colaborativa por
+voluntarios y  otros actores  interesados, siendo el elegido el 
+proyecto Debian.
+
+%Detalles del estudio
+El proyecto Debian tiene como una de sus metas lanzar 
+una  nueva versión estable del  sistema operativo en  el momento en  
+que ciertas  metas se cumplen. Sin embargo, muchas de estas no se 
+logran en un tiempo lo suficientemente rápido, teniendo como 
+consecuencia la distribución de paquetes software más antiguos en 
+relación a  otras distribuciones GNU/Linux.
 
 Poder predecir los tiempos de  entrega, ayudará a proyectos grandes de
 software  en la  economización de  recursos, debido  a la  detección a
@@ -67,14 +80,46 @@ decisiones relacionadas  con los  componentes que  forman parte  de su
 proyecto de  software tanto lo social  como lo técnico, lo  tangible e
 intangible.
 
-\chapter*{Introducción} En  el área de administración  de software una
+%TODO Que se busca
+\section*{Objetivos}
+%TODO objetivos tangibles y en linea con el objetivo general de la 
+%investigación
+
+%Ejemplo 1. Analizar experimentalmente un proyecto de software 
+%especifico -i.e. Debian GNU/Linux- para determinar la existencia de 
+%factores humanos para la creación de lanzamientos predecibles
+
+%TODO Como se pretende determinar
+\chapter*{Metodología de investigación}
+%TODO Expandir esta sección tomada desde el proposito
+Tomando en  cuenta factores
+relacionados con la  unidad mínima de software  denominada paquete que
+conforma una red que  a su vez conforma el sistema operativo
+en su  totalidad, además de  las redes  que existen en  las relaciones
+sociales de los  participantes en el desarrollo de  dicho software, 
+utilizando como base de este estudio  a el Proyecto Debian debido a 
+que provee  esta  infraestructura,  además de  tener  actualmente  
+algunos problemas de retraso  en entregas de lanzamientos de  su rama 
+estable, brindando el escenario ideal para realizar el estudio.
+
+%TODO Que se necesita
+\chapter*{Recursos}
+
+%TODO Milestones
+\chapter*{Alcances y limites}
+
+%TODO En linea con los objetivos y el proposito
+\chapter*{Resultados esperados}
+
+
+\chapter*{Introducción}En  el área de administración  de software una
 de las principales  áreas de estudio es la entrega  de lanzamientos en
-tiempo  y  utilizando los  recursos  disponibles,  si el  proyecto  de
+tiempo  utilizando los  recursos  disponibles,  si el  proyecto  de
 software   no  es   entregado  en   el  tiempo   estipulado  impactará
 directamente en el presupuesto del proyecto, la confianza en el equipo
 de  desarrollo,   y  afectará   la  confianza   en  el   entregable  a
 utilizar. Poder  predecir a  tiempo los puntos  que puedan  atrasar el
-proyecto ayudaría a entregar el software sin impactar negativamente en
+proyecto ayuda a entregar software sin impactar negativamente en
 los puntos mencionados  anteriormente. En el caso  del proyecto Debian
 GNU/Linux  dicha problemática  se ha  visto evidenciada  a través  del
 tiempo,  a  pesar de  no  tener  un  esquema de  tiempo  estrictamente
@@ -123,7 +168,7 @@ metodología de  investigación la propuesta  por el muestreo  teórico o
 sociales, como  es en  teste caso  además de ser  un bien  definido de
 actores conocidos.
 
-\chapter*{Antecedentes} Los proyectos de  software libre tienen por lo
+\chapter*{Antecedentes}Los proyectos de  software libre tienen por lo
 general  estructuras  colaborativas  comunitarias,  se  han  realizado
 estudios  acerca  de  los  patrones  de  comunicación,  debido  a  que
 investigar las estructuras sociales es  una forma útil de entender las
@@ -197,7 +242,7 @@ determinar que puntos modificar en su organización de manera técnica y
 social  de  tal forma  que  pueda  mejorar  tiempos de  lanzamiento  y
 obteniendo calidad en un tiempo razonable con una mayor anticipación.
 
-\chapter*{MARCO TEÓRICO}
+\chapter*{Contenido esperado}
 \begin{enumerate}
 \item Ingeniería de software
   \begin{enumerate}
@@ -244,6 +289,19 @@ obteniendo calidad en un tiempo razonable con una mayor anticipación.
   \item Notas Finales
   \end{enumerate}
 \end{enumerate}
+
+\chapter*{Asesor sugerido}
+
+\href{http://vorozco.com/cv/index-es.html}{Ing. Msc. Víctor Leonel 
+Orozco López}
+
+
+\chapter*{Cronograma de trabajo}
+%TODO Gantt con entregables
+
+\chapter*{Bibliografía}
+%TODO Crear el bib con las referencias existentes para generar el 
+%listado de referencias aca
 
 %En  el caso  del  protocolo, el  marco teórico  funge  como un  marco
 %conceptual,   indicando    ciertas   definiciones    conceptuales   y
