@@ -34,73 +34,85 @@ sociales:   Caso   practico    Debian   GNU/Linux}
 \chapter*{Propósito y objetivos}
 
 %TODO Porque se hace
-\section*{Propósito}
-%Situación actual
-Los proyectos de software se definen como procesos de  transformación 
-de ideas hacia herramientas tecnológicas que resuelven necesidades de 
-los usuarios. Y para llevar a cabo estos proyectos, las metodologías 
-de gestión de proyectos sugieren la implementación de  procesos  
-ordenados con límites y objetivos definidos, con el fin de obtener 
-ciclos de desarrollo y lanzamientos de Software eficientes y 
-predecibles.   No obstante, en la practica proyectos de Software 
-Libre han demostrado que la implementación 
-de estos procesos no  es una tarea trivial, dada su naturaleza  
-orgánica y colaborativa.
+\section*{Propósito} %Situación  actual
+Los proyectos de  software se definen como  procesos de transformación
+de ideas hacia herramientas  tecnológicas que resuelven necesidades de
+los usuarios. Y  para llevar a cabo estos  proyectos, las metodologías
+de  gestión  de  proyectos  sugieren  la  implementación  de  procesos
+ordenados con  límites y  objetivos definidos, con  el fin  de obtener
+ciclos  de   desarrollo  y  lanzamientos  de   Software  eficientes  y
+predecibles.  No obstante, en la  practica proyectos de Software Libre
+han demostrado que la implementación de estos procesos no es una tarea
+trivial, dada su naturaleza orgánica y colaborativa.
 
 %Problematica
-Considerando que la medición de los factores que  influyen en el 
-atraso  del cumplimiento de metas es de vital importancia para el 
-área de  Ingeniería de Software, y dada la inexistencia de un marco 
-de referencia acerca de estos factores en el área de de Software 
-Libre, se hace evidente la necesidad de determinar la existencia (si 
-la hubiera) de factores que afectan los ciclos de lanzamiento.
+Considerando que la medición de los factores que influyen en el atraso
+del cumplimiento  de metas  es de  vital importancia  para el  área de
+Ingeniería  de  Software,  y  dada  la inexistencia  de  un  marco  de
+referencia acerca de  estos factores en el área de  de Software Libre,
+se  hace evidente  la necesidad  de  determinar la  existencia (si  la
+hubiera) de factores que afectan los ciclos de lanzamiento.
 
-%Como encaja este estudio
-%TODO ver versión anterior para ver como se "despersonaliza"
-Visando la resolución de este problema, se propone el 
-estudio de un proyecto de software existente, específicamente
-sistemas operativos  libres  desarrollados de manera colaborativa por
-voluntarios y  otros actores  interesados, siendo el elegido el 
-proyecto Debian.
+%Como encaja este estudio %TODO ver  versión anterior para ver como se
 
-%Detalles del estudio
-El proyecto Debian tiene como una de sus metas lanzar 
-una  nueva versión estable del  sistema operativo en  el momento en  
-que ciertas  metas se cumplen. Sin embargo, muchas de estas no se 
-logran en un tiempo lo suficientemente rápido, teniendo como 
-consecuencia la distribución de paquetes software más antiguos en 
-relación a  otras distribuciones GNU/Linux.
+Divisando la resolución de este problema,  se propone el estudio de un
+proyecto  de software  existente, específicamente  sistemas operativos
+libres desarrollados  de manera  colaborativa por voluntarios  y otros
+actores interesados, siendo el elegido el proyecto Debian.
+
+%Detalles del estudio 
+El  proyecto Debian  tiene  como una  de sus  metas  lanzar una  nueva
+versión estable  del sistema  operativo en el  momento en  que ciertas
+metas se  cumplen.  Sin embargo,  muchas de estas  no se logran  en un
+tiempo  lo  suficientemente  rápido,  teniendo  como  consecuencia  la
+distribución de  paquetes software  más antiguos  en relación  a otras
+distribuciones GNU/Linux.
 
 Poder predecir los tiempos de  entrega, ayudará a proyectos grandes de
 software  en la  economización de  recursos, debido  a la  detección a
 tiempo de cuellos de botella  en desarrollo, colaboradores críticos en
 el  proyecto, mala  comunicación  entre los  distintos equipos,  entre
-otros.  Ayudando  así en  la  gestión  del  proyecto  con la  toma  de
+otros.   Ayudando así  en  la  gestión del  proyecto  con  la toma  de
 decisiones relacionadas  con los  componentes que  forman parte  de su
 proyecto de  software tanto lo social  como lo técnico, lo  tangible e
 intangible.
 
 %TODO Que se busca
-\section*{Objetivos}
-%TODO objetivos tangibles y en linea con el objetivo general de la 
-%investigación
+\section*{Objetivos}  %TODO  objetivos tangibles  y  en  linea con  el objetivo general de la %investigación
+\subsection{Objetivo General}
+\begin{itemize}
+\item Determinar los principales factores sociales y técnicos que influyen 
+en el retraso de los ciclos de lanzamiento en un proyecto de software
+colaborativo, utilizando la teoría de análisis de redes sociales.
+\end{itemize}
 
-%Ejemplo 1. Analizar experimentalmente un proyecto de software 
-%especifico -i.e. Debian GNU/Linux- para determinar la existencia de 
+\subsection{Objetivos Específicos}
+\begin{itemize}
+\item Analizar la interrelacion entre los desarrolladores de la Distribucion
+Debian  GNU/Linux para  determinar los  principales colaboradores  del
+proyecto en cuanto a cantidad de código realizado y errores detectados
+y/o corregidos.
+
+\end{itemize}
+
+%Ejemplo  1.  Analizar  experimentalmente   un  proyecto  de  software
+%especifico -i.e.  Debian GNU/Linux- para determinar  la existencia de
 %factores humanos para la creación de lanzamientos predecibles
 
+
+
+
 %TODO Como se pretende determinar
-\chapter*{Metodología de investigación}
-%TODO Expandir esta sección tomada desde el proposito
-Tomando en  cuenta factores
-relacionados con la  unidad mínima de software  denominada paquete que
-conforma una red que  a su vez conforma el sistema operativo
-en su  totalidad, además de  las redes  que existen en  las relaciones
-sociales de los  participantes en el desarrollo de  dicho software, 
-utilizando como base de este estudio  a el Proyecto Debian debido a 
-que provee  esta  infraestructura,  además de  tener  actualmente  
-algunos problemas de retraso  en entregas de lanzamientos de  su rama 
-estable, brindando el escenario ideal para realizar el estudio.
+\chapter*{Metodología  de investigación}  %TODO Expandir  esta sección
+tomada desde el proposito Tomando  en cuenta factores relacionados con
+la unidad mínima  de software denominada paquete que  conforma una red
+que a su vez conforma el  sistema operativo en su totalidad, además de
+las redes que existen en  las relaciones sociales de los participantes
+en  el desarrollo  de dicho  software,  utilizando como  base de  este
+estudio a el Proyecto Debian debido a que provee esta infraestructura,
+además de tener  actualmente algunos problemas de  retraso en entregas
+de lanzamientos de su rama  estable, brindando el escenario ideal para
+realizar el estudio.
 
 %TODO Que se necesita
 \chapter*{Recursos}
@@ -112,22 +124,22 @@ estable, brindando el escenario ideal para realizar el estudio.
 \chapter*{Resultados esperados}
 
 
-\chapter*{Introducción}En  el área de administración  de software una
-de las principales  áreas de estudio es la entrega  de lanzamientos en
-tiempo  utilizando los  recursos  disponibles,  si el  proyecto  de
-software   no  es   entregado  en   el  tiempo   estipulado  impactará
-directamente en el presupuesto del proyecto, la confianza en el equipo
-de  desarrollo,   y  afectará   la  confianza   en  el   entregable  a
-utilizar. Poder  predecir a  tiempo los puntos  que puedan  atrasar el
-proyecto ayuda a entregar software sin impactar negativamente en
-los puntos mencionados  anteriormente. En el caso  del proyecto Debian
-GNU/Linux  dicha problemática  se ha  visto evidenciada  a través  del
-tiempo,  a  pesar de  no  tener  un  esquema de  tiempo  estrictamente
-definido,  se intenta  lanzar una  nueva versión  estable del  sistema
-operativo en  el momento en  que ciertas  metas se cumplan,  muchas de
-estas no se llegan a lograr en un tiempo lo suficientemente rápido, de
-tal forma que  se distribuya software más antiguo del  que se presenta
-en otras distribuciones GNU/Linux.
+\chapter*{Introducción}En el área de administración de software una de
+las  principales áreas  de estudio  es la  entrega de  lanzamientos en
+tiempo utilizando los recursos disponibles, si el proyecto de software
+no es entregado  en el tiempo estipulado impactará  directamente en el
+presupuesto del proyecto,  la confianza en el equipo  de desarrollo, y
+afectará la  confianza en el  entregable a utilizar. Poder  predecir a
+tiempo  los puntos  que puedan  atrasar el  proyecto ayuda  a entregar
+software  sin   impactar  negativamente  en  los   puntos  mencionados
+anteriormente.  En  el  caso   del  proyecto  Debian  GNU/Linux  dicha
+problemática se ha  visto evidenciada a través del tiempo,  a pesar de
+no  tener un  esquema  de tiempo  estrictamente  definido, se  intenta
+lanzar una nueva  versión estable del sistema operativo  en el momento
+en que ciertas metas se cumplan, muchas de estas no se llegan a lograr
+en un tiempo lo suficientemente rápido, de tal forma que se distribuya
+software  más antiguo  del  que se  presenta  en otras  distribuciones
+GNU/Linux.
 
 Para  poder  llegar  a  determinar   las  causas  que  afectan  en  el
 lanzamiento  de tiempo  se decide  utilizar la  teoría de  análisis de
@@ -168,7 +180,7 @@ metodología de  investigación la propuesta  por el muestreo  teórico o
 sociales, como  es en  teste caso  además de ser  un bien  definido de
 actores conocidos.
 
-\chapter*{Antecedentes}Los proyectos de  software libre tienen por lo
+\chapter*{Antecedentes}Los proyectos  de software libre tienen  por lo
 general  estructuras  colaborativas  comunitarias,  se  han  realizado
 estudios  acerca  de  los  patrones  de  comunicación,  debido  a  que
 investigar las estructuras sociales es  una forma útil de entender las
@@ -176,35 +188,34 @@ practicas  de  los  equipos  realizándolo por  medio  de  realizar  un
 análisis  de  comunicación entre  desarrolladores  en  un proyecto  de
 software utilizando  análisis de redes  sociales de los  correos entre
 los  colaboradores que  resuelven  bugs\footnote{Crowston, Kevin,  and
-  James  Howison.  ``The  social  structure of  free  and open  source
-  software development.''  First Monday  10.2 (2005).}.  Es importante
+James  Howison.   ``The  social  structure of  free  and  open  source
+software development.''   First Monday  10.2 (2005).}.   Es importante
 además  de que  forma se  transmite  el conocimiento  entre todos  los
 miembros del grupo se ha podido determinar por medio de la utilización
 de la misma técnica que el conocimiento tácito del proyecto se lleva a
-cabo de persona  a persona de manera directa o  por un intermediario en
+cabo de persona a persona de  manera directa o por un intermediario en
 posición  dominante de  tal forma  que pueden  determinarse flujos  de
 comunicación   entre  personas   \footnote{Ryan,   Sharon,  and   Rory
-  V. O\'Connor. ``Development of a team measure for tacit knowledge in
-  software development teams.''  Journal  of Systems and Software 82.2
-  (2009): 229-240.}.  Otros autores han tocado  el tema de la forma en
+V. O\'Connor. ``Development  of a team measure for  tacit knowledge in
+software development  teams.''  Journal  of Systems and  Software 82.2
+(2009): 229-240.}.   Otros autores han tocado  el tema de la  forma en
 que la comunicación  fluye entre todo el equipo  de desarrollo, además
-de  mapearlo  a   los  artefactos  de  software   que  estos  programan
+de  mapearlo  a  los  artefactos   de  software  que  estos  programan
 \footnote{Ehrlich,   Kate,  Giuseppe   Valetto,  and   Mary  Helander.
-  ``Seeing  inside:  Using  social   network  analysis  to  understand
-  patterns  of  collaboration  and  coordination  in  global  software
-  teams.''  Global  Software Engineering,  2007.  ICGSE  2007.  Second
-  IEEE  International  Conference on.  IEEE,  2007.}.   Como se  puede
-observar ya  existen estudios que  han abordado el tema  utilizando la
-técnica  de SNA  aplicada  a comunidades  desarrolladoras de  software,
-desde el punto de vista  de comunicación, colaboración además de poder
-relacionarlas  con el  software en  sí. Con  estos estudios  como base
-podremos  modelar de  una  mejor  forma nuestro  estudio  y siendo  el
-elemento  diferenciador, poder  relacionar  los  resultados al  impacto
-directo  con  el  tiempo  de   lanzamiento  del  sistema  operativo  y
-relacionándolo con la antigüedad del software incluido dentro de este,
-y   encontrando   además   los   cuellos  de   botella   y   problemas
-específicamente para  nuestro caso  de estudio la  distribución Debian
-GNU/Linux.
+``Seeing inside: Using social  network analysis to understand patterns
+of collaboration and coordination  in global software teams.''  Global
+Software Engineering,  2007.  ICGSE  2007.  Second  IEEE International
+Conference  on.  IEEE,  2007.}.   Como se  puede  observar ya  existen
+estudios  que  han abordado  el  tema  utilizando  la técnica  de  SNA
+aplicada a comunidades desarrolladoras de  software, desde el punto de
+vista de comunicación, colaboración  además de poder relacionarlas con
+el software  en sí. Con estos  estudios como base podremos  modelar de
+una mejor  forma nuestro estudio  y siendo el  elemento diferenciador,
+poder relacionar  los resultados al  impacto directo con el  tiempo de
+lanzamiento del  sistema operativo y relacionándolo  con la antigüedad
+del software incluido dentro de este, y encontrando además los cuellos
+de botella y problemas específicamente para nuestro caso de estudio la
+distribución Debian GNU/Linux.
 
 \chapter*{Justificación} En  la actualidad proyectos  colaborativos de
 software tienen problemas al tratar de poder entregar nuevas versiones
@@ -224,17 +235,17 @@ retrasar  el lanzamiento  de  un software,  para  poder detectarlos  a
 tiempo y poder enfocarse en la solución de dichos inconvenientes.
 
 Se ha decidido  elegir un proyecto comunitario de  software libre como
-Debian  GNU/Linux debido a factores sociales  y técnicos,  sociales
-por que  la  estructura   organizacional  de  la  comunidad  de
-desarrolladores es pública y abierta lo cual es una ventaja para poder
-obtener información de  relaciones entre toda la  comunidad.  Desde el
-punto de vista  técnico, al ser un proyecto que  desarrolla un sistema
-operativo  de software  libre permite  poder  tener acceso  a toda  la
-información referente a los enlaces y relaciones que existen entre las
-unidades de software que forman al sistema operativo en general, desde
-relaciones de dependencias directas  hasta relaciones indirectas en el
-funcionamiento integral del sistema operativo. Utilizando al proyecto 
-Debian podremos describir los problemas específicos que tiene de tal 
+Debian GNU/Linux debido  a factores sociales y  técnicos, sociales por
+que la estructura organizacional de la comunidad de desarrolladores es
+pública  y  abierta  lo  cual   es  una  ventaja  para  poder  obtener
+información de relaciones entre toda  la comunidad.  Desde el punto de
+vista técnico, al ser un  proyecto que desarrolla un sistema operativo
+de software  libre permite  poder tener acceso  a toda  la información
+referente a los enlaces y relaciones que existen entre las unidades de
+software que forman al sistema  operativo en general, desde relaciones
+de   dependencias  directas   hasta   relaciones   indirectas  en   el
+funcionamiento integral del sistema  operativo. Utilizando al proyecto
+Debian podremos describir  los problemas específicos que  tiene de tal
 forma que pueda servir al área de ingeniería de software.
 
 El trabajo va dirigido a toda  persona que necesite modelos para poder
@@ -252,7 +263,7 @@ obteniendo calidad en un tiempo razonable con una mayor anticipación.
   \item Etapas del proceso de desarrollo de software
   \item Ciclo de vida de desarrollo
   \item Gestión del proyecto
-  \item Aseguramiento de calidad    
+  \item Aseguramiento de calidad
   \item Tiempos de lanzamiento
   \item Estimación de tiempos y metas
   \end{enumerate}
@@ -279,7 +290,7 @@ obteniendo calidad en un tiempo razonable con una mayor anticipación.
   \item Selección de información
   \item Métodos de recolección de datos
   \item Recolección de información
-  \item Métodos de análisis  
+  \item Métodos de análisis
   \end{enumerate}
 \item Análisis de resultado
   \begin{enumerate}
@@ -292,16 +303,14 @@ obteniendo calidad en un tiempo razonable con una mayor anticipación.
 
 \chapter*{Asesor sugerido}
 
-\href{http://vorozco.com/cv/index-es.html}{Ing. Msc. Víctor Leonel 
+\href{http://vorozco.com/cv/index-es.html}{Ing.  Msc.   Víctor  Leonel
 Orozco López}
 
 
-\chapter*{Cronograma de trabajo}
-%TODO Gantt con entregables
+\chapter*{Cronograma de trabajo} %TODO Gantt con entregables
 
-\chapter*{Bibliografía}
-%TODO Crear el bib con las referencias existentes para generar el 
-%listado de referencias aca
+\chapter*{Bibliografía}  %TODO  Crear  el   bib  con  las  referencias
+existentes para generar el %listado de referencias aca
 
 %En  el caso  del  protocolo, el  marco teórico  funge  como un  marco
 %conceptual,   indicando    ciertas   definiciones    conceptuales   y
