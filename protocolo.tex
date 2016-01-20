@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass[12pt,titlepage]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{hyperref}
@@ -30,8 +30,10 @@ sociales:   Caso   practico    Debian   GNU/Linux}
 %\chapter*{Resumen}
 %Se puede crear a partir de la introducción, en el protocolo no es 
 %necesario que incluya una introducción detallada
+\setcounter{section}{0}
+\cleardoublepage
 
-\chapter*{Propósito del proyecto}
+\section{Propósito del proyecto}
 
 %TODO Porque se hace
 %\section*{Propósito del proyecto} %Situación  actual
@@ -77,7 +79,7 @@ decisiones relacionadas  con los  componentes que  forman parte  de su
 proyecto de  software tanto lo social  como lo técnico, lo  tangible e
 intangible.
 
-\chapter*{Introducción}
+\section{Introducción}
 En el área de administración de  software una de las principales áreas
 de  estudio es  la entrega  de lanzamientos  en tiempo  utilizando los
 recursos disponibles, si el proyecto de software no es entregado en el
@@ -133,7 +135,7 @@ metodología de  investigación la propuesta  por el muestreo  teórico o
 sociales, como  es en  teste caso  además de ser  un bien  definido de
 actores conocidos.
 
-\chapter*{Antecedentes}
+\section{Antecedentes}
 Los  proyectos de  software libre  tienen por  lo general  estructuras
 colaborativas comunitarias,  se han  realizado estudios acerca  de los
 patrones  de comunicación,  debido  a que  investigar las  estructuras
@@ -171,7 +173,7 @@ del software incluido dentro de este, y encontrando además los cuellos
 de botella y problemas específicamente para nuestro caso de estudio la
 distribución Debian GNU/Linux.
 
-\chapter*{Justificación}
+\section{Justificación}
 En la actualidad proyectos  colaborativos de software tienen problemas
 al  tratar  de  poder  entregar   nuevas  versiones  estables  de  sus
 programas, debido  a múltiples razones,  tanto en la parte  técnica de
@@ -208,7 +210,7 @@ determinar que puntos modificar en su organización de manera técnica y
 social  de  tal forma  que  pueda  mejorar  tiempos de  lanzamiento  y
 obteniendo calidad en un tiempo razonable con una mayor anticipación.
 
-\chapter*{Marco Teórico}
+\section{Marco Teórico}
 \begin{enumerate}
 \item Ingeniería de software
   \begin{enumerate}
@@ -257,8 +259,8 @@ obteniendo calidad en un tiempo razonable con una mayor anticipación.
 \end{enumerate}
 
 %TODO Milestones
-\chapter*{Planteamiento del problema}
-\title{Alcances} 
+\section{Planteamiento del problema}
+\subsection{Alcances} 
 \begin{itemize}
 \item  Crear  una  red  de  paquetes relacionados  por  medio  de  las
 dependencias entre ellos
@@ -274,7 +276,7 @@ tiempos de lanzamiento de la distribución
 \item Analizar los datos referentes a las redes de colaboradores en el
 proyecto para determinar los colaboradores con más conexiones
 \end{itemize}
-\title{Límites}
+\subsection{Límites}
 \begin{itemize}
 \item  Se utilizarán  los  algoritmos existentes  de  teoría de  redes
   sociales  para  encontrar  las características  importantes  de  las
@@ -284,8 +286,8 @@ proyecto para determinar los colaboradores con más conexiones
 
 
 %TODO Que se busca
-\section*{Objetivos}  %TODO  objetivos tangibles  y  en  linea con  el objetivo general de la %investigación
-\subsection*{Objetivo General}
+\section{Objetivos}  %TODO  objetivos tangibles  y  en  linea con  el objetivo general de la %investigación
+\subsection{Objetivo General}
 \begin{itemize}
 \item  Determinar los  principales  factores sociales  y técnicos  que
 influyen en el retraso de los  ciclos de lanzamiento en un proyecto de
@@ -293,7 +295,7 @@ software  colaborativo,  utilizando la  teoría  de  análisis de  redes
 sociales.
 \end{itemize}
 
-\subsection*{Objetivos Específicos}
+\subsection{Objetivos Específicos}
 \begin{itemize}
 \item Analizar el grado de  la interrelacion entre los desarrolladores
 de la  distribución Debian  GNU/Linux para determinar  los principales
@@ -309,11 +311,10 @@ lanzamiento.
 afecta la buena o mala  relacion entre desarrolladores %Como afecta la
 buena/mala relacion  entre los desarrolladores y  ustream %Como afecta
 un bug RC en un paquete en especifico
-
 \end{itemize}
 
 %TODO Como se pretende determinar
-\chapter*{Metodología de investigación} %TODO Expandir esta sección Se
+\section{Metodología de investigación} %TODO Expandir esta sección Se
 Tomar en  cuenta  factores  relacionados con  la  unidad  mínima  de
 software denominada paquete que conforma una red que a su vez conforma
 el sistema operativo en su totalidad,  además de las redes que existen
@@ -325,7 +326,7 @@ de  su rama  estable, brindando  el escenario  ideal para  realizar el
 estudio.
 
 %TODO Que se necesita
-\chapter*{Recursos}
+\section{Recursos}
 \begin{itemize}
 \item Acceso y análisis a datos del bug tracking system
 \item Acceso y análisis a la lista de correo de bugs
@@ -334,7 +335,7 @@ estudio.
 \end{itemize}
 
 %TODO En linea con los objetivos y el proposito
-\chapter*{Resultados esperados}
+\section{Resultados esperados}
 Poder determinar  la existencia  de redes  entre los
 distintos participantes de un proyecto colaborativo de software, desde
 el  punto de  vista social,  es decir,  la parte  humana del  proyecto
@@ -343,19 +344,18 @@ existir  las  redes poder  utilizarlas  para  analizar y  encontrar  y
 validar los  posibles factores  que afectan en  el lanzamiento  de una
 nueva versión estable.
 
-\chapter*{Asesor sugerido}
+\section{Asesor sugerido}
 
 \href{http://vorozco.com/cv/index-es.html}{Ing.  Msc.   Víctor  Leonel
 Orozco López}
 
 
-\chapter*{Cronograma de trabajo} %TODO Gantt con entregables
+\section{Cronograma de trabajo} %TODO Gantt con entregables
 %1 mes y medio marco teórico
 %1 mes y medio obtención de datos
 %1 mes y medio análisis de datos
 %1 mes conclusiones
 
-\chapter*{Bibliografía} 
 \begin{thebibliography}{9}
 \bibitem[Crowston]{0} Crowston,  Kevin, and James  Howison \textit{The
     social  structure of  free and  open source  software development}
