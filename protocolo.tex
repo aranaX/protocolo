@@ -49,13 +49,13 @@ predecibles.  No obstante, en la practica proyectos de Software Libre
 han demostrado que la implementación de estos procesos no es una tarea
 trivial, dada su naturaleza orgánica y colaborativa.
 
-% Problematica
-Considerando que la medición de los factores que influyen en el atraso
-del cumplimiento de metas es de vital importancia para el área de
-Ingeniería de Software, y dada la inexistencia de un marco de
-referencia acerca de estos factores en el área de de Software Libre,
-se hace evidente la necesidad de determinar la existencia (si la
-hubiera) de factores que afectan los ciclos de lanzamiento.
+% Problematica Considerando que la medición de los factores que
+influyen en el atraso del cumplimiento de metas es de vital
+importancia para el área de Ingeniería de Software, y dada la
+inexistencia de un marco de referencia acerca de estos factores en el
+área de de Software Libre, se hace evidente la necesidad de determinar
+la existencia (si la hubiera) de factores que afectan los ciclos de
+lanzamiento.
 
 % Como encaja este estudio %TODO ver versión anterior para ver como se
 
@@ -64,13 +64,12 @@ proyecto de software existente, específicamente sistemas operativos
 libres desarrollados de manera colaborativa por voluntarios y otros
 actores interesados, siendo el elegido el proyecto Debian.
 
-% Detalles del estudio
-El proyecto Debian tiene como una de sus metas lanzar una nueva
-versión estable del sistema operativo en el momento en que ciertas
-metas se cumplen.  Sin embargo, muchas de estas no se logran en un
-tiempo lo suficientemente rápido, teniendo como consecuencia la
-distribución de paquetes software más antiguos en relación a otras
-distribuciones GNU/Linux.
+% Detalles del estudio El proyecto Debian tiene como una de sus metas
+lanzar una nueva versión estable del sistema operativo en el momento
+en que ciertas metas se cumplen.  Sin embargo, muchas de estas no se
+logran en un tiempo lo suficientemente rápido, teniendo como
+consecuencia la distribución de paquetes software más antiguos en
+relación a otras distribuciones GNU/Linux.
 
 Poder predecir los tiempos de entrega, ayudará a proyectos grandes de
 software en la economización de recursos, debido a la detección a
@@ -81,32 +80,32 @@ decisiones relacionadas con los componentes que forman parte de su
 proyecto de software tanto lo social como lo técnico, lo tangible e
 intangible.
 
-\chapter{Introducción}
-En el área de administración de software una de las principales áreas
-de estudio es la entrega de lanzamientos en tiempo utilizando los
-recursos disponibles, si el proyecto de software no es entregado en el
-tiempo estipulado impactará directamente en el presupuesto del
-proyecto, la confianza en el equipo de desarrollo, y afectará la
-confianza en el entregable a utilizar. Poder predecir a tiempo los
-puntos que puedan atrasar el proyecto ayuda a entregar software sin
-impactar negativamente en los puntos mencionados anteriormente.  En el
-caso del proyecto Debian GNU/Linux dicha problemática se ha visto
-evidenciada a través del tiempo, a pesar de no tener un esquema de
-tiempo estrictamente definido, se intenta lanzar una nueva versión
-estable del sistema operativo en el momento en que ciertas metas se
-cumplan, muchas de estas no se llegan a lograr en un tiempo lo
-suficientemente rápido, de tal forma que se distribuya software más
-antiguo del que se presenta en otras distribuciones GNU/Linux.
+\chapter{Introducción} En el área de administración de software una de
+las principales áreas de estudio es la entrega de lanzamientos en
+tiempo utilizando los recursos disponibles, si el proyecto de software
+no es entregado en el tiempo estipulado impactará directamente en el
+presupuesto del proyecto, la confianza en el equipo de desarrollo, y
+afectará la calidad en el entregable a utilizar. Poder predecir a
+tiempo los puntos que puedan atrasar el proyecto ayuda a entregar
+software sin impactar negativamente en los puntos mencionados
+anteriormente.  En el caso del proyecto Debian GNU/Linux dicha
+problemática se ha visto evidenciada desde los inicios del proyecto, a
+pesar de no tener un esquema de tiempo estrictamente definido, se
+intenta lanzar una nueva versión estable del sistema operativo en el
+momento en que ciertas metas se cumplan, muchas de estas no se llegan
+a cumplir en un tiempo lo suficientemente rápido, causando que se
+distribuya software bastante estable pero más antiguo del que se
+presenta en otras distribuciones GNU/Linux.
 
 Para poder llegar a determinar las causas que afectan en el
 lanzamiento de tiempo se decide utilizar la teoría de análisis de
 redes, esto debido a que tiene como objetivo encontrar relaciones en
-eventos de la naturaleza que no parecen tener incidencia unos con
-otros a primera vista, sin embargo al realizar un análisis profundo de
-sus relaciones, en algunos casos, pueden encontrarse desde relaciones
-de causa efecto entre eventos, actores, recursos, hasta la importancia
-de algunos de estos en el funcionamiento de todo el sistema en su
-conjunto, subgrupos relacionados, relaciones inesperadas, entre otras.
+eventos del proyecto que no parecen tener incidencia unos con otros a
+primera vista, sin embargo al realizar un análisis profundo de estas,
+en algunos casos, pueden encontrarse desde relaciones de causa efecto
+entre eventos, actores, recursos, hasta la importancia de algunos de
+estos en el funcionamiento de todo el sistema en su conjunto,
+subgrupos relacionados, relaciones inesperadas, entre otras.
 
 Utilizando dicha teoría se pretende analizar el proyecto colaborativo
 de software libre Debian y su sistema operativo Debian GNU/Linux con
@@ -121,10 +120,11 @@ paquete, como relaciones entre nodos se tomaran en cuenta,
 dependencias de construcción entre paquetes, dependencias en tiempo de
 ejecución de los paquetes, bugs detectados en los paquetes que
 interfieran en la relación entre ellos, cantidad de bugs reportados de
-parte de un desarrollador Debian a un desarrollador upstream, cantidad
-de parches aplicados por parte de upstream enviados por un
-desarrollador Debian, cantidad de correos entre desarrolladores.  Con
-esta información modelada se podrá analizar por medio de algoritmos
+parte de un desarrollador Debian a un desarrollador del software que
+da origen al paquete, cantidad de parches aplicados por parte de los
+desarrolladores originales del software enviados por un desarrollador
+Debian, cantidad de correos entre desarrolladores.  Con esta
+información modelada se podrá analizar por medio de algoritmos
 existentes de teoría de análisis de redes sociales, en caso de poder
 ser aplicables, de lo contrario se creara el adecuado para poder
 realizar de manera apropiada los datos y de esta forma poder
@@ -134,7 +134,7 @@ hacer un análisis del impacto en el tiempo de desarrollo de una nueva
 versión estable del proyecto de software a otra.  Se utilizará como
 metodología de investigación la propuesta por el muestreo teórico o
 ``Grounded Theory'', bastante utilizada cuando se realizan estudios
-sociales, como es en teste caso además de ser un bien definido de
+sociales, como es en este caso además de ser un bien definido de
 actores conocidos.
 
 \chapter{Antecedentes}
@@ -145,25 +145,16 @@ sociales es una forma útil de entender las practicas de los equipos
 realizándolo por medio de realizar un análisis de comunicación entre
 desarrolladores en un proyecto de software utilizando análisis de
 redes sociales de los correos entre los colaboradores que resuelven
-bugs\footnote{Crowston, Kevin, and James Howison.  ``The social
-  structure of free and open source software development.''  First
-  Monday 10.2 (2005).}.  Es importante además de que forma se
+bugs\cite{crowston2005social}.  Es importante además de que forma se
 transmite el conocimiento entre todos los miembros del grupo se ha
 podido determinar por medio de la utilización de la misma técnica que
 el conocimiento tácito del proyecto se lleva a cabo de persona a
 persona de manera directa o por un intermediario en posición dominante
 de tal forma que pueden determinarse flujos de comunicación entre
-personas \footnote{Ryan, Sharon, and Rory V. O\'Connor. ``Development
-  of a team measure for tacit knowledge in software development
-  teams.''  Journal of Systems and Software 82.2 (2009): 229-240.}.
-Otros autores han tocado el tema de la forma en que la comunicación
-fluye entre todo el equipo de desarrollo, además de mapearlo a los
-artefactos de software que estos programan \footnote{Ehrlich, Kate,
-  Giuseppe Valetto, and Mary Helander.  ``Seeing inside: Using social
-  network analysis to understand patterns of collaboration and
-  coordination in global software teams.''  Global Software
-  Engineering, 2007.  ICGSE 2007.  Second IEEE International
-  Conference on.  IEEE, 2007.}.  Como se puede observar ya existen
+personas\cite{ryan2009development}.Otros autores han tocado el tema de
+la forma en que la comunicación fluye entre todo el equipo de
+desarrollo, además de mapearlo a los artefactos de software que estos
+programan \cite{ehrlich2007seeing}.  Como se puede observar ya existen
 estudios que han abordado el tema utilizando la técnica de SNA
 aplicada a comunidades desarrolladoras de software, desde el punto de
 vista de comunicación, colaboración además de poder relacionarlas con
@@ -216,7 +207,11 @@ obteniendo calidad en un tiempo razonable con una mayor anticipación.
 \begin{enumerate}
 \item Ingeniería de software
   \begin{enumerate}
-  \item Definición
+  \item Definición La ingeniería de software es una disciplina de
+    ingeniería que se interesa por todos los aspectos de la producción
+    de software, desde las primeras etapas de la especificación del
+    sistema hasta el mantenimiento del sistema después de que se pone
+    en operación.\cite{9786073206037}
   \item Recurso humano
   \item Recurso de software
   \item Etapas del proceso de desarrollo de software
@@ -338,10 +333,13 @@ estable, brindando el escenario ideal para realizar el estudio.
 % TODO Que se necesita
 \chapter{Recursos}
 \begin{itemize}
-\item Acceso y análisis a datos del bug tracking system
-\item Acceso y análisis a la lista de correo de bugs
-\item Poder de procesamiento para analizar más de 30,000 paquetes
-  interrelacionados
+\item Base de datos de errores del Proyecto Debian (Debian UDD)
+\item Base de datos de los paquetes del Proyecto Debian
+\item Base de datos de la lista de correo de errores y de los
+  desarrolladores
+\item Computadora con el poder de procesamiento para analizar más de
+  30,000 paquetes interrelacionados
+\item Acceso a información del proyecto
 \end{itemize}
 
 % TODO En linea con los objetivos y el proposito
@@ -362,14 +360,15 @@ nueva versión estable.
 
 \chapter{Cronograma de trabajo}
 \begin {ganttchart}{1}{12}
-  \gantttitle {2016}{8} \\
-  \gantttitlelist {Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto}{1} \\
-%  \gantttitlelist {1,...,12}{1} \\
-%  \ganttgroup {Elaboración de tesis}{1}{7} \\
- % \ganttbar {Marco teórico}{2}{3}  \\ 
- % \ganttlinkedbar {Recolección de datos}{3}{5} \\
- % \ganttlinkedbar {Análisis de datos}{5}{7} \\
- % \ganttlinkedbar {Conclusiones}{7}{8}
+  % \gantttitle {2016}{8} \\
+  % \gantttitlelist {Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio,
+  % Agosto}{1} \\
+  % \gantttitlelist {1,...,12}{1} \\
+  % \ganttgroup {Elaboración de tesis}{1}{7} \\
+  % \ganttbar {Marco teórico}{2}{3} \\
+  % \ganttlinkedbar {Recolección de datos}{3}{5} \\
+  % \ganttlinkedbar {Análisis de datos}{5}{7} \\
+  % \ganttlinkedbar {Conclusiones}{7}{8}
 \end {ganttchart}
 
 
@@ -378,22 +377,34 @@ nueva versión estable.
 % obtención de datos 1 mes y medio análisis de datos 1 mes
 % conclusiones
 
-\begin{thebibliography}{9}
-\bibitem[Crowston]{0} Crowston, Kevin, and James Howison \textit{The
-    social structure of free and open source software development}
-  First Monday 10.2, 2005
-\bibitem[Ryan]{1} Ryan, Sharon, and Rory V.  O\'Connor
-  \textit{Development of a team measure for tacit knowledge in
-    software development teams} Journal of Systems and Software 82.2,
-  2009
-\bibitem[Ehrlich]{2}Ehrlich, Kate, Giuseppe Valetto, and Mary Helander
-  \textit{Seeing inside: Using social network analysis to understand
-    patterns of collaboration and coordination in global software
-    teams} Global Software Engineering, 2007.  ICGSE 2007.  Second
-  IEEE International Conference on.  IEEE, 2007
-\end{thebibliography}
+
+\bibliography{biblos}{} \bibliographystyle{plain}
+
+% \begin{thebibliography}{9}
+% \bibitem[Crowston]{0} Crowston, Kevin, and James Howison \textit{The
+%   social structure of free and open source software development}
+%   First Monday 10.2, 2005
+% \bibitem[Ryan]{1} Ryan, Sharon, and Rory V.  O\'Connor
+%   \textit{Development of a team measure for tacit knowledge in
+%   software development teams} Journal of Systems and Software 82.2,
+%   2009
+% \bibitem[Ehrlich]{2}Ehrlich, Kate, Giuseppe Valetto, and Mary
+%   Helander \textit{Seeing inside: Using social network analysis to
+%   understand patterns of collaboration and coordination in global
+%   software teams} Global Software Engineering, 2007.  ICGSE 2007.
+%   Second IEEE International Conference on.  IEEE, 2007
+% \end{thebibliography}
 
 \end{document}
+
+%https://packages.debian.org/sid/dctrl-tools
+%iter_paragraphs
+% apt-cache rdepends <packagename> and scrape terminal output too
+% apt-rdepends
+% bottom of the page https://bugs.debian.org/cgi-bin/pkgreport.cgi?src=gtk+3.0
+% <themill> quertybts is the command line utility to look things up; python-debianbts is the SOAP wrapper; Judd has a UDD wrapper.
+% http://git.nanonanonano.net/?p=judd.git;a=tree;f=supybot/plugins/Judd/uddcache
+
 
 %TODO                                                       referencia
 http://www.researchgate.net/publication/271625890_Analysis_of_activity_in_open-source_communities_using_social_network_analysis_techniques
