@@ -49,7 +49,8 @@ predecibles.  No obstante, en la practica proyectos de Software Libre
 han demostrado que la implementación de estos procesos no es una tarea
 trivial, dada su naturaleza orgánica y colaborativa.
 
-% Problematica Considerando que la medición de los factores que
+% Problematica
+Considerando que la medición de los factores que
 influyen en el atraso del cumplimiento de metas es de vital
 importancia para el área de Ingeniería de Software, y dada la
 inexistencia de un marco de referencia acerca de estos factores en el
@@ -64,7 +65,8 @@ proyecto de software existente, específicamente sistemas operativos
 libres desarrollados de manera colaborativa por voluntarios y otros
 actores interesados, siendo el elegido el proyecto Debian.
 
-% Detalles del estudio El proyecto Debian tiene como una de sus metas
+% Detalles del estudio
+El proyecto Debian tiene como una de sus metas
 lanzar una nueva versión estable del sistema operativo en el momento
 en que ciertas metas se cumplen.  Sin embargo, muchas de estas no se
 logran en un tiempo lo suficientemente rápido, teniendo como
@@ -97,6 +99,11 @@ a cumplir en un tiempo lo suficientemente rápido, causando que se
 distribuya software bastante estable pero más antiguo del que se
 presenta en otras distribuciones GNU/Linux.
 
+%TODO Este parrafo lo escribiria de forma diferente en la siguiente secuencia:
+\begin{comment}
+- Mencionar brevemente que hay estudios que indican que el desarrollo de SL son proyectos humano-sociales en red(causa)
+- Mencionar que el SNA puede ser utilizado para este tipo de relaciones (consequencia))
+\end{comment}
 Para poder llegar a determinar las causas que afectan en el
 lanzamiento de tiempo se decide utilizar la teoría de análisis de
 redes, esto debido a que tiene como objetivo encontrar relaciones en
@@ -139,7 +146,9 @@ actores conocidos.
 
 \chapter{Antecedentes}
 Los proyectos de software libre tienen por lo general estructuras
-colaborativas comunitarias, se han realizado estudios acerca de los
+colaborativas comunitarias,
+%TODO referencia
+ ,se han realizado estudios acerca de los
 patrones de comunicación, debido a que investigar las estructuras
 sociales es una forma útil de entender las practicas de los equipos
 realizándolo por medio de realizar un análisis de comunicación entre
@@ -165,6 +174,15 @@ lanzamiento del sistema operativo y relacionándolo con la antigüedad
 del software incluido dentro de este, y encontrando además los cuellos
 de botella y problemas específicamente para nuestro caso de estudio la
 distribución Debian GNU/Linux.
+
+\begin{comment}
+La información en este parrafo esta bien, mi unico comentario es la forma en la que lo escribis es un poco "al machetazo", si observas los tres papers que referenciaste siempre van en este orden al escribir los antecedentes:
+- Hechos generales aceptados en el área de conocimiento que serán de ayuda para afirmar su teoría -e.g. que la interacción de los desarrolladores en proyectos distribuidos es un proceso social-
+- Hechos generales que hay en trabajos relacionados -e.g. que hay estudios de proyectos de software libre como procesos colaborativos-
+- Justifican el uso de la(s) técnica(s) de sus papers y como es diferente a los trabajos relacionados -e.g. El trabajo de Wolf(2011) demostró que se puede utilizar redes bayesianas para predecir la influencia a futuro que tendra el retraso de X o Y paquete, sin embargo desconsidera la relación inmediata por lo que, en este trabajo se pretende utilizar SNA en linea con lo presentado con los autores [98] y [99]-
+
+Podes buscar más papers que tengan sección "Related Works" o en las Introducciones para ver como se hace y como van de lo generalistico a lo especifico y relacionado.
+\end{comment}
 
 \chapter{Justificación}
 En la actualidad proyectos colaborativos de software tienen problemas
@@ -203,6 +221,7 @@ determinar que puntos modificar en su organización de manera técnica y
 social de tal forma que pueda mejorar tiempos de lanzamiento y
 obteniendo calidad en un tiempo razonable con una mayor anticipación.
 
+%TODO Hasta donde tengo entendido en el protocolo solo es necesario que pongas la estructura de tu trabajo, no asi el contenido, eso es más para la tesis.
 \chapter{Marco Teórico}
 \begin{enumerate}
 \item Ingeniería de software
@@ -255,13 +274,12 @@ obteniendo calidad en un tiempo razonable con una mayor anticipación.
   \end{enumerate}
 \end{enumerate}
 
-% TODO Milestones
 \chapter{Planteamiento del problema}
 \section*{Alcances}
 \begin{itemize}
-\item Crear una red de paquetes relacionados por medio de las
-  dependencias entre ellos
-\item Crear una red de colaboradores dentro del proyecto
+%TODO Definir porque es importante cada alcance, para que se hace
+\item Modelar una red de paquetes de software, relacionados por medio de las dependencias entre ellos, para analizar la importancia de cada uno
+\item Modelar una red de colaboradores dentro del proyecto
   (desarrolladores Debian) y entre los colaboradores externos e
   internos (Desarrolladores Debian y desarrolladores originales de
   software)
@@ -330,7 +348,7 @@ debido a que provee esta infraestructura, además de tener actualmente
 algunos problemas de retraso en entregas de lanzamientos de su rama
 estable, brindando el escenario ideal para realizar el estudio.
 
-% TODO Que se necesita
+% TODO Podes mencionar tambien recursos humanos (-e.g. Investigador, asesor, etc.)
 \chapter{Recursos}
 \begin{itemize}
 \item Base de datos de errores del Proyecto Debian (Debian UDD)
