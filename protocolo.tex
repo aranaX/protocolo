@@ -7,7 +7,7 @@
 \usepackage{xargs}
 \usepackage{changebar}
 \usepackage{pgfgantt}
-
+\usepackage{pdfpages}
 %\usepackage[colorinlistoftodos, textwidth=65mm, shadow]{todonotes}
 %\usepackage[paperwidth=275.9mm, paperheight=279.4mm]{geometry}
 %\setlength{\oddsidemargin}{35mm}
@@ -27,10 +27,10 @@
 \setlength{\textwidth}{430pt}                                                         
 
 
- \title{ {Análisis de tiempos de lanzamiento de
-    proyectos comunitarios de software libre mediante análisis de
-    redes sociales: Caso practico Debian GNU/Linux} \\ {Protocolo} }
-\author{Wences Arana}
+ \title{ {Factores que inciden en el retraso de  tiempos de lanzamiento de
+    proyectos comunitarios de software libre mediante el uso  análisis de
+    redes sociales: Caso pr\'actico Debian GNU/Linux} \\ \\ {Protocolo} }
+\author{Wences Arana}  
 \maketitle
 
 \tableofcontents
@@ -105,17 +105,17 @@ distribuya software bastante estable pero más antiguo del que se
 presenta en otras distribuciones GNU/Linux.
 
 Los proyectos de desarrollo de software libre tienen un componente
-humano colaborativo, el cual es construido a traves de las
-aportaciones de codigo de cada uno de los desarrolladores, utilizando
-medios de comunicacion como listas de correo y sistemas de registro de
+humano colaborativo, el cual es construido a través de las
+aportaciones de código de cada uno de los desarrolladores, utilizando
+medios de comunicación como listas de correo y sistemas de registro de
 errores. Como puede notarse dichas relaciones dilucidan una red
-interna de comunicacion entre cada uno de los desarolladores, dichas
-redes puede ser estudiadas por medio del uso de tecnicas provenientes
-de la teoria del analisis de redes sociales, pudiendo utilizar
-algoritmos y analisis de informacion que dichas teorias proveen
+interna de comunicación entre cada uno de los desarrolladores, dichas
+redes puede ser estudiadas por medio del uso de técnicas provenientes
+de la teoría del análisis de redes sociales, pudiendo utilizar
+algoritmos y análisis de información que dichas teorías proveen
 para modelar de una mejor forma la red y poder clasificar la
-informacion determinando variables y factores que pueden apoyar
-nuestro estudio, unido a esto tambien podemos considerar el usso de teoria
+información determinando variables y factores que pueden apoyar
+nuestro estudio, unido a esto también podemos considerar el usos de teoría
 de redes sociales  debido a que tiene como objetivo encontrar relaciones en eventos del proyecto que
 no parecen tener incidencia unos con otros a primera vista, sin
 embargo al realizar un análisis profundo de estas, en algunos casos,
@@ -185,8 +185,8 @@ de botella y problemas específicamente para nuestro caso de estudio la
 distribución Debian GNU/Linux.
 
 \begin{comment}
-La información en este parrafo esta bien, mi unico comentario es la
-forma en la que lo escribis es un poco "al machetazo", si observas los
+La información en este párrafo esta bien, mi único comentario es la
+forma en la que lo escribís es un poco "al machetazo", si observas los
 tres papers que referenciaste siempre van en este orden al escribir
 los antecedentes: - Hechos generales aceptados en el área de
 conocimiento que serán de ayuda para afirmar su teoría -e.g. que la
@@ -355,7 +355,13 @@ obteniendo calidad en un tiempo razonable con una mayor anticipación.
 \end{itemize}
 
 % TODO Como se pretende determinar
+%ver http://www.socscidiss.bham.ac.uk/methodologies.html
 \chapter{Metodología de investigación} %TODO Expandir esta sección Se
+La investigación será de tipo cuantitativo debido al uso y análisis
+de datos medibles, replicables y dependientes ligeramente de un contexto
+específico. El proceso se realizará implementando muestreo téorico 
+debido  Se Determinar variables dependientes e independientes en base a la hipotesis
+planteada anteriormente. Se analizara la informacion proveniente 
 Tomar en cuenta factores relacionados con la unidad mínima de software
 denominada paquete que conforma una red que a su vez conforma el
 sistema operativo en su totalidad, además de las redes que existen en
@@ -365,7 +371,6 @@ debido a que provee esta infraestructura, además de tener actualmente
 algunos problemas de retraso en entregas de lanzamientos de su rama
 estable, brindando el escenario ideal para realizar el estudio.
 
-% TODO Podes mencionar tambien recursos humanos (-e.g. Investigador, asesor, etc.)
 \chapter{Recursos}
 \begin{itemize}
 \item Base de datos de errores del Proyecto Debian (Debian UDD)
@@ -388,7 +393,21 @@ de vista social, es decir, la parte humana del proyecto
 (desarrolladores) y la parte técnica conformada por los paquetes. De
 existir las redes poder utilizarlas para analizar y encontrar y
 validar los posibles factores que afectan en el lanzamiento de una
-nueva versión estable.
+nueva versión estable. De tal forma que se esperara obtener:
+
+\begin{itemize}
+\item Mapear una red de paquetes unidos por sus relaciones de dependencias
+\item Mapear una red de colaboradores dentro del proyecto
+\item Obtener en ambas redes valores de centralidad
+\item Por medio de los datos obtenidos a partir del análisis de las
+  redes, si es posible definir valores de centralidad, existencia de
+  clusters, clicas, entre otros.
+\item Determinar importancia de los paquetes por medio de análisis de centralidad
+\item Determinar paquetes críticos en base a su cantidad de errores e importancia en la red
+\item Determinar colaboradores mas activos en cuanto a errores reportados y corregidos
+\item Determinar colaboradores mas activos respecto a su comunicación
+  a través de los medios de comunicación del proyecto
+\end{itemize}
 
 \chapter{Asesor sugerido}
 
@@ -397,7 +416,9 @@ nueva versión estable.
 
 
 \chapter{Cronograma de trabajo}
-\begin {ganttchart}{1}{12}
+%\includepdf[pages={1}]{grantt.pdf}
+
+%\begin {ganttchart}{1}{12}
   % \gantttitle {2016}{8} \\
   % \gantttitlelist {Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio,
   % Agosto}{1} \\
@@ -407,7 +428,7 @@ nueva versión estable.
   % \ganttlinkedbar {Recolección de datos}{3}{5} \\
   % \ganttlinkedbar {Análisis de datos}{5}{7} \\
   % \ganttlinkedbar {Conclusiones}{7}{8}
-\end {ganttchart}
+%\end {ganttchart}
 
 
 
