@@ -1,4 +1,4 @@
-\documentclass[12pt,titlepage]{report}
+\documentclass[letterpaper,12pt,titlepage]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish=nohyphenation]{hyphsubst}
 \usepackage[spanish]{babel}
@@ -7,6 +7,7 @@
 \usepackage{xargs}
 \usepackage{changebar}
 \usepackage{pgfgantt}
+
 %\usepackage[colorinlistoftodos, textwidth=65mm, shadow]{todonotes}
 %\usepackage[paperwidth=275.9mm, paperheight=279.4mm]{geometry}
 %\setlength{\oddsidemargin}{35mm}
@@ -19,8 +20,14 @@
 %\setlength{\headsep}{12mm}
 %\setlength{\topskip}{0mm}
 %\setlength{\textheight}{228mm}
+\begin{document}
 
-\begin{document} \title{ {Análisis de tiempos de lanzamiento de
+\linespread{1.2}
+%margen derecho reducido %Ver: http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Layout                  
+\setlength{\textwidth}{430pt}                                                         
+
+
+ \title{ {Análisis de tiempos de lanzamiento de
     proyectos comunitarios de software libre mediante análisis de
     redes sociales: Caso practico Debian GNU/Linux} \\ {Protocolo} }
 \author{Wences Arana}
@@ -176,12 +183,25 @@ de botella y problemas específicamente para nuestro caso de estudio la
 distribución Debian GNU/Linux.
 
 \begin{comment}
-La información en este parrafo esta bien, mi unico comentario es la forma en la que lo escribis es un poco "al machetazo", si observas los tres papers que referenciaste siempre van en este orden al escribir los antecedentes:
-- Hechos generales aceptados en el área de conocimiento que serán de ayuda para afirmar su teoría -e.g. que la interacción de los desarrolladores en proyectos distribuidos es un proceso social-
-- Hechos generales que hay en trabajos relacionados -e.g. que hay estudios de proyectos de software libre como procesos colaborativos-
-- Justifican el uso de la(s) técnica(s) de sus papers y como es diferente a los trabajos relacionados -e.g. El trabajo de Wolf(2011) demostró que se puede utilizar redes bayesianas para predecir la influencia a futuro que tendra el retraso de X o Y paquete, sin embargo desconsidera la relación inmediata por lo que, en este trabajo se pretende utilizar SNA en linea con lo presentado con los autores [98] y [99]-
+La información en este parrafo esta bien, mi unico comentario es la
+forma en la que lo escribis es un poco "al machetazo", si observas los
+tres papers que referenciaste siempre van en este orden al escribir
+los antecedentes: - Hechos generales aceptados en el área de
+conocimiento que serán de ayuda para afirmar su teoría -e.g. que la
+interacción de los desarrolladores en proyectos distribuidos es un
+proceso social- - Hechos generales que hay en trabajos relacionados
+-e.g. que hay estudios de proyectos de software libre como procesos
+colaborativos- - Justifican el uso de la(s) técnica(s) de sus papers y
+como es diferente a los trabajos relacionados -e.g. El trabajo de
+Wolf(2011) demostró que se puede utilizar redes bayesianas para
+predecir la influencia a futuro que tendra el retraso de X o Y
+paquete, sin embargo desconsidera la relación inmediata por lo que, en
+este trabajo se pretende utilizar SNA en linea con lo presentado con
+los autores [98] y [99]-
 
-Podes buscar más papers que tengan sección "Related Works" o en las Introducciones para ver como se hace y como van de lo generalistico a lo especifico y relacionado.
+Podes buscar más papers que tengan sección "Related Works" o en las
+Introducciones para ver como se hace y como van de lo generalistico a
+lo especifico y relacionado.
 \end{comment}
 
 \chapter{Justificación}
@@ -358,6 +378,9 @@ estable, brindando el escenario ideal para realizar el estudio.
 \item Computadora con el poder de procesamiento para analizar más de
   30,000 paquetes interrelacionados
 \item Acceso a información del proyecto
+\item Investigador
+\item Asesor
+\item Al menos 2 desarrolladores Debian
 \end{itemize}
 
 % TODO En linea con los objetivos y el proposito
@@ -397,21 +420,6 @@ nueva versión estable.
 
 
 \bibliography{biblos}{} \bibliographystyle{plain}
-
-% \begin{thebibliography}{9}
-% \bibitem[Crowston]{0} Crowston, Kevin, and James Howison \textit{The
-%   social structure of free and open source software development}
-%   First Monday 10.2, 2005
-% \bibitem[Ryan]{1} Ryan, Sharon, and Rory V.  O\'Connor
-%   \textit{Development of a team measure for tacit knowledge in
-%   software development teams} Journal of Systems and Software 82.2,
-%   2009
-% \bibitem[Ehrlich]{2}Ehrlich, Kate, Giuseppe Valetto, and Mary
-%   Helander \textit{Seeing inside: Using social network analysis to
-%   understand patterns of collaboration and coordination in global
-%   software teams} Global Software Engineering, 2007.  ICGSE 2007.
-%   Second IEEE International Conference on.  IEEE, 2007
-% \end{thebibliography}
 
 \end{document}
 
